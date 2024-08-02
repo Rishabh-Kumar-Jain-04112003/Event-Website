@@ -1,0 +1,28 @@
+{
+  "Item": {
+    "eventID": {"S": "001"},
+    "eventName": {"S": "Virtual Tech Conference"},
+    "eventDate": {"S": "2023-12-01"},
+    "eventTime": {"S": "10:00 AM"},
+    "eventDuration": {"S": "3 hours"},
+    "eventHost": {"S": "Tech Company XYZ"},
+    "streamURL": {"S": "https://www.example.com/stream/001"},
+    "participants": {
+      "L": [
+        {
+          "M": {
+            "participantID": {"S": "P001"},
+            "participantName": {"S": "John Doe"}
+          }
+        },
+        {
+          "M": {
+            "participantID": {"S": "P002"},
+            "participantName": {"S": "Jane Smith"}
+          }
+        }
+        
+      ]
+    }
+  }
+}

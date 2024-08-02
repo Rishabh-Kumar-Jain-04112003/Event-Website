@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Gallery</title>
+</head>
+<body>
+
+    <h1>Event Gallery</h1>
+
+    <form id="eventForm" action="#" method="post" enctype="multipart/form-data">
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="eventName" required><br>
+
+        <label for="eventDate">Event Date:</label>
+        <input type="date" id="eventDate" name="eventDate" required><br>
+
+        <label for="eventDescription">Event Description:</label><br>
+        <textarea id="eventDescription" name="eventDescription" rows="4" cols="50" required></textarea><br>
+
+        <label for="imageUpload">Upload Image:</label>
+        <input type="file" id="imageUpload" name="imageUpload" accept="image/*" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Display stored events and images -->
+    <div id="eventGallery">
+        <!-- Display events and images here -->
+    </div>
+
+    <script>
+        // Handle form submission
+        document.getElementById('eventForm').addEventListener('submit', function (event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // You can add logic here to send the form data to the server using Ajax or other methods
+
+            // Redirect to the imagemessage.html page after successful submission
+            window.location.href = 'imagemessage.html';
+        });
+    </script>
+
+</body>
+</html>
+

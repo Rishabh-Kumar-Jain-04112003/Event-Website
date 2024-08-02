@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+
+Resources:
+  UploadEventDetailsFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs14.x
+      FunctionName: UploadEventDetailsFunction
+      Description: Lambda function to upload event details
+      Role: # Your execution role ARN here
+      Timeout: 10
+      Events:
+        S3Event:
+          Type: S3
+          Properties:
+            Bucket: # Your S3 bucket name
+            Events: s3:ObjectCreated:*
+
+Outputs:
+  UploadEventDetailsFunctionOutput:
+    Description: 'Upload Event Details Lambda Function ARN'
+    Value: !GetAtt UploadEventDetailsFunction.Arn

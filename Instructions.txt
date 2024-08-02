@@ -1,0 +1,33 @@
+Virtual Event Hosting Platform - Instructions
+
+
+Pre-Setup Instructions:
+
+1. **Download All Files:**
+   - Ensure that you have downloaded all the files associated with the Virtual Event Hosting Platform project from the repository. This includes HTML, CSS, JavaScript, and any other relevant files.
+
+2. File Names Integrity:
+   - It is crucial to maintain the integrity of file names. Do not alter the names of any files as it may disrupt the functionality and structure of the project.
+
+### Deployment Instructions:
+
+1. Hosting with VS Code:
+   - This project is designed to be hosted using Visual Studio Code (VS Code) and its live server extension.
+
+2. Setting up Live Server:
+   - If you haven't already, download and install Visual Studio Code.
+   - Install the Live Server extension.
+   - Once installed, open the project folder in Visual Studio Code.
+
+3. Starting Live Server:
+   - Navigate to the HTML file named `index.html` or the main entry point of the project.
+   - Right-click on the `index.html` file and select "Open with Live Server" from the context menu.
+   - This action will initiate a live server, allowing you to view and interact with the Virtual Event Hosting Platform in your default web browser.
+
+4. Exploring the Platform:
+   - Once the live server is running, you can explore the various features and functionalities of the Virtual Event Hosting Platform.
+   - Test different scenarios and ensure everything functions as expected.
+
+Conclusion:
+
+With these instructions, you should be able to set up and deploy the Virtual Event Hosting Platform project smoothly using Visual Studio Code and its live server extension. 
